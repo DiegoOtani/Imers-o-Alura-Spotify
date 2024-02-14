@@ -113,7 +113,7 @@
 
 .playlist-container{
     height: 68vh;
-    padding-top: 16px;
+    padding-top: 8px;
     margin: 10px;
     border-radius: 10px;
     background-color: #121212;
@@ -250,15 +250,12 @@
   --min-container-width: 372px;
 }
 
-.hidden {
-  display: none;
-}
-
 .grid-container {
   grid-gap: var(--grid-gap);
   display: grid;
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
   min-width: var(--min-container-width);
+  gap: 32px;
 }
 
 .artist-card {
@@ -267,7 +264,7 @@
   -ms-flex: 1;
   flex: 1;
   isolation: isolate;
-  padding: 16px;
+  padding: 8px;
   position: relative;
   transition: background-color 0.3s ease;
   width: 100%;
@@ -281,7 +278,7 @@
   padding-bottom: 100%;
   position: relative;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .artist-img {
@@ -351,5 +348,27 @@
 
 #result-artist {
   padding: 20px 40px;
+  
 }
 /* FIM CARD ARTISTA */
+
+.search-error{
+    display: flex;
+    justify-content: center;
+    height: 68vh;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.search-error__message{
+    margin: 10px;
+    padding: 10px;
+    color: var(--text-base-light);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
